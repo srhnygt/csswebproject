@@ -1,0 +1,189 @@
+/*      My Own Slider Edits      */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@700&family=Pushster&family=Righteous&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+html,
+body {
+    position: relative;
+}
+
+.swiper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    color: black;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    float: left;
+    height: 100%;
+}
+
+.swiper-wrapper.b {
+    height: auto;
+}
+
+.swiper-slide img {
+    display: block;
+    margin-top: 3.5vh;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(243, 149, 13) !important;
+}
+
+.swiper-scrollbar-drag {
+    background-color: rgb(243, 149, 13) !important;
+}
+
+.swiper-slide.b {
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: rgb(62, 142, 126);
+    height: 70vh;
+    margin-left: 10px;
+    flex-direction: column;
+    opacity: .2;
+    transition: border-radius 1s, opacity 1s, box-shadow 1s;
+    border-radius: 25px;
+}
+
+.swiper-slide.b.swiper-slide-active {
+    box-shadow: 0 0 1.5rem 0 rgb(0, 0, 0, 0.35);
+    opacity: 1;
+    border-radius: 100px;
+}
+
+.swiper-slide.b.swiper-slide-next {
+    opacity: .5;
+}
+
+.swiper-slide.b.swiper-slide-prev {
+    opacity: .5;
+}
+
+.swiper-pagination {
+    position: absolute;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(243, 149, 13) !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-text {
+    position: absolute;
+    float: left;
+    background-image: url("../images/swiper-text.png");
+    height: 50%;
+    width: 35%;
+}
+
+
+/* Second Slide Contents */
+
+.slide-picture {
+    height: 35%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.slide-picture>span {
+    color: rgb(250, 187, 81);
+    position: relative;
+    top: 90%;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.4);
+    left: 0;
+    font-size: 2vw;
+    font-family: 'Lobster', sans-serif;
+    font-weight: 400;
+}
+
+.slide-text {
+    height: 65%;
+    width: 98%;
+}
+
+.slide-text>p {
+    margin-top: 7vh;
+    color: rgb(250, 187, 81);
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: 'Righteous', sans-serif;
+    line-height: 3.1vh;
+}
+
+
+/* 1 */
+
+.bg-1 {
+    background-image: url("../images/natürmort.jpg");
+}
+
+
+/* 2 */
+
+.bg-2 {
+    background-image: url("../images/peyzaj.jfif");
+}
+
+
+/* 3 */
+
+.bg-3 {
+    background-image: url("../images/atatürk-portre.jpg");
+}
+
+
+/* 4 */
+
+.bg-4 {
+    background-image: url("../images/enteriyör.jpg");
+}
+
+
+/* 5 */
+
+.bg-5 {
+    background-image: url("../images/soyut.jpg");
+}
+
+
+/* 6 */
+
+.bg-6 {
+    background-image: url("../images/imgesel.jpg");
+}

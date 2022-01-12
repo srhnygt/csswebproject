@@ -1,0 +1,863 @@
+/* by Serhan YİĞİT */
+
+
+/* ~~~~~ Fonts ~~~~~ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@700&family=Pushster&family=Righteous&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+/* ~ Styles ~ */
+
+
+/*  <Main Page> */
+
+* {
+    color: rgb(62, 142, 126);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: rgb(250, 187, 81);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Header */
+
+#header {
+    background-color: rgb(124, 209, 184);
+    width: 95.30vw;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    height: 8vh;
+    box-shadow: 0 0 2rem 0 rgb(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 99;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.logo {
+    margin: 0 0 0 3vh;
+    float: left;
+    height: 8vh;
+    width: 11.5vw;
+}
+
+.menu {
+    height: 100%;
+    width: auto;
+    float: right;
+    margin-right: 3vw;
+}
+
+.menu ul {
+    display: block;
+    height: 100%;
+    float: left;
+}
+
+.menu ul li {
+    float: left;
+    height: 4vh;
+    margin-top: 2.5vh;
+    padding: 0 3vw 0 0vw;
+    transition: 300ms all;
+}
+
+.menu ul li:last-child {
+    padding: 0;
+}
+
+.menu ul li>a {
+    color: rgb(62, 142, 126);
+    font-family: 'Righteous', cursive;
+    font-size: 1.3vw;
+    transition: 300ms all;
+}
+
+.menu ul li:hover>a {
+    color: rgb(250, 187, 81);
+}
+
+.menu ul li:active>a {
+    color: rgb(219, 57, 28);
+}
+
+
+/* Content */
+
+.portre {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10vh;
+}
+
+.pictures {
+    float: left;
+    height: 100%;
+    width: 45vw;
+    padding: 10px;
+}
+
+.portre-text {
+    float: left;
+    height: 70vh;
+    width: 45vw;
+    padding: 20px;
+}
+
+.portre>h2 {
+    display: inline-block;
+    padding-left: 41.7vw;
+    position: relative;
+    font-family: 'Pushster', cursive;
+    font-weight: 600;
+    font-size: 2.5vw;
+    margin: 5vh 0 7vh 0;
+}
+
+.box {
+    float: left;
+    margin-left: 6vw;
+    height: 35vh;
+    width: 16vw;
+    background-position: top;
+    background-size: cover;
+    border: 2px solid rgb(62, 142, 126);
+    transition: all 500ms;
+}
+
+.box:hover {
+    background-position: bottom;
+    border-color: rgb(219, 57, 28);
+    box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.5);
+}
+
+.box.c,
+.box.d {
+    margin-top: 3vh;
+}
+
+.box.a {
+    background-image: url(../images/portre1.jpg);
+}
+
+.box.b {
+    background-image: url(../images/portre2.jpg);
+}
+
+.box.c {
+    background-image: url(../images/portre3.jpg);
+}
+
+.box.d {
+    background-image: url(../images/portre4.jpg);
+}
+
+.portre-text>p {
+    margin-top: 5vh;
+}
+
+.portre-text p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: rgb(62, 142, 126);
+    font-size: 3vh;
+}
+
+.portre-text h3 {
+    margin: 7vh 0 7vh 0;
+    font-size: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.picture-sections {
+    width: 100%;
+    float: left;
+}
+
+.picture-sections img {
+    border: 2px solid rgb(62, 142, 126);
+    border-radius: 70px;
+    width: 466.66px;
+    height: 325.33px;
+    margin-left: 10vw;
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.3);
+}
+
+.picture-sections h1 {
+    display: block;
+    padding-left: 36.5vw;
+    position: relative;
+    font-family: 'Pushster', cursive;
+    font-weight: 600;
+    font-size: 2.5vw;
+    margin: 5vh 0 7vh 0;
+}
+
+.picture-sections p {
+    width: 70vw;
+    font-size: 3.5vh;
+    margin: 10vh 0 7vh 15vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.picture-title {
+    padding-left: 39.4vw !important;
+}
+
+.picture-title~img {
+    margin-left: 10.5vw;
+}
+
+
+/* Footer */
+
+#footer {
+    float: left;
+    position: relative;
+    width: 95.30vw;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    height: 50vh;
+    background-color: rgb(124, 209, 184);
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    box-shadow: 0 0 1.75rem 0 rgb(0, 0, 0, 0.3);
+    margin-top: 5vh;
+    bottom: 0;
+}
+
+.footer-picture {
+    opacity: 0 !important;
+    position: absolute;
+    left: 49%;
+    margin-top: 11.5vh;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    opacity: .4;
+    z-index: -1;
+    transition: 1s all;
+}
+
+#footer:hover .footer-picture {
+    opacity: .4 !important;
+}
+
+.left,
+.right {
+    float: left;
+    height: 100%;
+    width: 49.5%;
+}
+
+.split {
+    float: left;
+    width: 1px;
+    height: 85%;
+    background-color: rgb(62, 142, 126);
+    margin-top: 4.5vh;
+}
+
+.left section {
+    margin: 6vh 0 0 3vw;
+}
+
+.left section>h1 {
+    display: inline-block;
+    position: relative;
+    left: 45%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.left section p {
+    margin: 2vh 0 0 3vh;
+    font-size: 1.1vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.left section .go-to-contact {
+    display: inline-block;
+    margin: 3vh 0 0 3vh;
+    font-size: 1vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left section u {
+    display: inline-block;
+    font-size: 1.2vw;
+    color: rgb(55, 128, 113);
+    margin: 0 4px 0 8px;
+    cursor: pointer;
+}
+
+.section-last {
+    margin-top: 4vh !important;
+}
+
+.left section:last-child ul {
+    margin: 3vh 0 0 3vh;
+}
+
+.left section:last-child ul li {
+    margin: 1vh 0 0 0;
+}
+
+.left section:last-child ul li i {
+    margin: 0 0.8vw 0 0;
+}
+
+.fas.fa-lira-sign {
+    margin: 0 1.45vw 0 0 !important;
+}
+
+.fas.fa-map-marker-alt {
+    margin: 0 1.2vw 0 0 !important;
+}
+
+.fas.fa-university {
+    margin: 0 0.9vw 0 0 !important;
+}
+
+.top,
+.bottom {
+    float: left;
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.top section {
+    margin: 6vh 3vw 0 0;
+}
+
+.top section h1 {
+    display: inline-block;
+    position: relative;
+    left: 45%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.top p {
+    margin: 2vh 0 0 3vh;
+    font-size: 1.1vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.bottom>div {
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.socialbox {
+    float: left;
+    width: 5vw;
+    height: auto;
+    margin: 3vh 0 0 3.5vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.socialbox.d {
+    width: 7vw;
+}
+
+.socialbox i {
+    font-size: 5vw !important;
+    transition: .5s all;
+}
+
+.socialbox a {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-top: 2vh;
+    font-family: 'Righteous';
+    transition: .5s all;
+}
+
+.socialbox.b a {
+    left: -10%;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.socialbox:hover i {
+    color: rgb(219, 57, 28);
+}
+
+.socialbox:hover a {
+    color: rgb(219, 57, 28);
+}
+
+.socialbox:active i {
+    color: rgb(168, 25, 0);
+}
+
+.socialbox:active a {
+    color: rgb(168, 25, 0);
+}
+
+
+/* <About Page> */
+
+#content.about {
+    min-height: 100vh;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.about-title {
+    display: block;
+    float: left;
+    position: relative;
+    left: 50%;
+    margin: 18vh 0 3vh 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-family: 'Righteous', cursive;
+    font-size: 4vw;
+}
+
+.about-me {
+    float: left;
+    margin: 5vh 0 0 5vh;
+}
+
+.about-me section h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    text-shadow: 2.5px 2.5px 4px rgb(0, 0, 0, 0.2);
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.about-me section p {
+    color: rgb(55, 128, 113);
+    margin: 4vh 0 0 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    line-height: 3.5vh;
+}
+
+.about-top,
+.about-me-middle,
+.about-me-bottom {
+    margin: 5vh 0 0 0;
+    float: left;
+    width: 100%;
+}
+
+.about-first-image {
+    float: left;
+    width: 36.10vw;
+    height: 68, 64vh;
+}
+
+.about-me section {
+    float: left;
+    width: 85%;
+    margin: 10vh 0 8vh 7.5%;
+}
+
+.first-section,
+.second-section {
+    width: 51.90vw !important;
+    margin-left: 5vw !important;
+}
+
+.about-second-image {
+    float: right;
+    width: 36.10vw;
+    height: 68, 64vh;
+    opacity: .8;
+}
+
+.second-section {
+    margin-top: 20vh !important;
+}
+
+.about-bottom img {
+    width: 35vw;
+    height: 44vh;
+    margin-top: 8vh;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.35);
+}
+
+.about-bottom img:last-child {
+    float: right;
+}
+
+
+/* <Gallery Page> */
+
+#content.gallery {
+    min-height: 100vh;
+}
+
+.gallery-title {
+    display: block;
+    float: left;
+    position: relative;
+    left: 50%;
+    margin: 18vh 0 15vh 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-family: 'Righteous', cursive;
+    font-size: 4vw;
+}
+
+.gallery-boxes {
+    width: 100%;
+    float: left;
+}
+
+.gallery-boxes img {
+    border-radius: 10px;
+    box-shadow: 7px 7px 9px 3px rgb(0, 0, 0, 0.3);
+    float: left;
+}
+
+.gallery-row {
+    float: left;
+    width: 100%;
+    margin-bottom: 20vh;
+    position: relative;
+}
+
+.gallery-row.a img {
+    width: 38vw;
+    height: 50vh;
+    margin: 0 0 0 6vw;
+}
+
+.gallery-row.a img:last-child {
+    width: 42vw;
+}
+
+.gallery-row.b img {
+    margin: 0 0 0 1.4vw;
+}
+
+.gallery-row.b img:nth-child(1) {
+    width: 22vw;
+    height: 30vh;
+    transform: translateY(35%);
+    -webkit-transform: translateY(35%);
+}
+
+.gallery-row.b img:nth-child(2) {
+    width: 35vw;
+    height: 45vh;
+    transform: translateY(5%);
+    -webkit-transform: translateY(5%);
+}
+
+.gallery-row.b img:nth-child(3) {
+    width: 36vw;
+    height: 50vh;
+}
+
+.gallery-row.c img {
+    width: 45vw;
+    height: 55vh;
+    margin: 0 0 0 3.1vw;
+}
+
+
+/* <Contact Page> */
+
+#content.contact {
+    min-height: 100vh;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.contact-title {
+    display: block;
+    float: left;
+    position: relative;
+    left: 50%;
+    margin: 18vh 0 15vh 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-family: 'Righteous', cursive;
+    font-size: 4vw;
+}
+
+.contact-form {
+    float: left;
+    width: 80vw;
+    height: 85vh;
+    margin: 0 0 10vh 10vw;
+    background-color: rgb(173, 150, 20, 0.05);
+    border-radius: 75px;
+    box-shadow: 0 0 1rem 0 rgb(0, 0, 0, 0.3);
+}
+
+.contact-form>h2 {
+    display: block;
+    float: left;
+    position: absolute;
+    left: 49%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin: 3vh 0 10vh 0;
+    font-family: 'Ubuntu', cursive;
+    font-weight: 600;
+    font-size: 2vw;
+    z-index: -9999;
+}
+
+.labels {
+    width: 19.2%;
+    height: 65vh !important;
+    margin: 14vh 0 0 9vw;
+    float: left;
+}
+
+.labels label,
+select {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0 0 2vh 0;
+    font-weight: 500;
+}
+
+.labels input {
+    float: right;
+    margin: 1vh 0 0 0;
+    width: 98%;
+    height: 3.5vh;
+    border-radius: 5px;
+    transition: all 150ms;
+    background-color: rgb(255, 255, 255, 0.3);
+    color: rgb(55, 128, 113);
+}
+
+.labels input:focus {
+    border: 2px solid rgb(55, 55, 255);
+}
+
+.labels input:valid {
+    border: 2px solid green;
+}
+
+.labels input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin: 0 2vw 0 2vw;
+}
+
+.labels select {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: all 150ms;
+    height: 4vh;
+    text-align: center;
+}
+
+.labels select:focus {
+    border: 2px solid rgb(55, 55, 255);
+}
+
+label[for="request"] {
+    display: inline-block;
+    float: left;
+}
+
+#request {
+    float: right;
+    display: inline-block;
+}
+
+label[for="request"] {
+    font-weight: 500;
+    transition: 300ms all;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+}
+
+label[for="request"]:hover {
+    color: tomato;
+}
+
+#request:checked+form {
+    opacity: 1;
+}
+
+.request {
+    float: left;
+    width: 20%;
+    height: 65vh;
+    margin: 13vh 0 0 5vw;
+}
+
+.request form {
+    opacity: .5;
+    transition: 400ms all;
+    margin-top: 8vh;
+}
+
+.request label,
+select {
+    display: block;
+    float: left;
+    width: auto;
+    margin: 0 0 2vh 0;
+    font-weight: 500;
+}
+
+.request input {
+    float: right;
+    margin: 1vh 0 0 0;
+    width: auto;
+    height: 3.5vh;
+    border-radius: 5px;
+    transition: all 150ms;
+    background-color: rgb(255, 255, 255, 0.3);
+    color: rgb(55, 128, 113);
+}
+
+.request select {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: all 150ms;
+    height: 4vh;
+    text-align: center;
+}
+
+.request select:focus {
+    border: 2px solid rgb(55, 55, 255);
+}
+
+.request input:focus {
+    border: 2px solid rgb(55, 55, 255);
+}
+
+.request input:valid {
+    border: 2px solid green;
+}
+
+#expression {
+    transition: 150ms all;
+}
+
+#expression:focus {
+    border: 2px solid rgb(55, 55, 255);
+}
+
+.message {
+    float: left;
+    width: 20%;
+    margin: 14vh 0 0 5vw;
+}
+
+.message * {
+    width: 100%;
+    float: left;
+}
+
+.message label,
+select {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0 0 2vh 0;
+    font-weight: 500;
+}
+
+.message input {
+    float: right;
+    margin: 1vh 0 0 0;
+    width: 98%;
+    height: 3.5vh;
+    border-radius: 5px;
+    transition: all 150ms;
+    background-color: rgb(255, 255, 255, 0.3);
+    color: rgb(55, 128, 113);
+}
+
+.message input:focus {
+    border: 2px solid rgb(55, 55, 255);
+}
+
+.message input:valid {
+    border: 2px solid green;
+}
+
+.message input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin: 0 2vw 0 2vw;
+}
+
+.message select {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: all 150ms;
+    height: 4vh;
+    text-align: center;
+}
+
+.message select:focus {
+    border: 2px solid rgb(55, 55, 255);
+}
+
+.message textarea {
+    margin-top: 2.5vh;
+}
+
+input[type="submit"] {
+    position: absolute;
+    padding: 2vh 3vw 2vh 3vw;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-weight: 500;
+    margin-top: 75vh;
+    border-radius: 20px;
+    transition: 500ms all;
+    z-index: 10;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+input[type="submit"]:active {
+    color: rgb(238, 49, 16);
+}
+
+input:valid {
+    background-color: rgb(255, 255, 255, 1);
+}
